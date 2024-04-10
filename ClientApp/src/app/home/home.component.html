@@ -1,27 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results Page</title>
-    <link rel="stylesheet" href="home.component.css">
+    <link rel="stylesheet" type="text/css" href="home.component.css">
+  <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">-->
 </head>
 <body>
-    <header>
-        
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </div>
-        <div class="search-history">Search History</div>
-    </header>
-    <main>
-        <aside class="filters">
-            <h2>Filters</h2>
-            <!-- Add your filter options here -->
+    <div id="grid-container">
+        <header>
+            <nav>
+                <a href="home.component.html"><img src="C:\Users\eirik\OneDrive\Dokumenter\Skole\TesterVSC\ClientApp\bilder\Evidi_blå.png" class="img-logo-nav"></a>
+                <ul>
+                    <li><a href="searchhistory.html">Search history</a></li>
+                    <li><a href="fetchdata.html">Fetch data</a></li>
+                    <li><a href="counter.html">Counter</a></li>
+                    <li><a href="home.component.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <input type="search" name="search" placeholder="Søk..." >
+
+            <div class="heading-main">
+                <h1>Resultater</h1>
+                <h3>Sorter<i class="fa-solid fa-angle-down"></i></h3>
+            </div>
+
+        </main>
+        <aside>
+            <h2><i class="fa-solid fa-sliders"></i>Filters</h2>
+            <p>Dato<i class="fa-solid fa-angle-down"></i></p>
+
         </aside>
-        <section class="results">
-            <h1>Search Results</h1>
-            <!-- Display search results here -->
-        </section>
-    </main>
+        <footer>
+            <a href="home.component.html"><img src="C:\Users\eirik\OneDrive\Skrivebord\TesterVSC\ClientApp\bilder\Evidi_hvit.png" class="img-logo-footer"></a>
+            <p><i class="fa-regular fa-copyright"></i>Copyright 2024</p>
+        </footer>
+    </div>
 </body>
+</html>
